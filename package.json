@@ -1,0 +1,24 @@
+{
+  "name": "ringandlights",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "setup": "npm run build && cd ./build/setup && node setup.js",
+    "dev": "cd ./build && node index.js"
+  },
+  "author": "Ben Thompson",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "node-ask": "^1.0.1",
+    "ring-client-api": "^12.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
+}

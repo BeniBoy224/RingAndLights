@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  nodejs-app:
+    container_name: RingAndLights
+    image: node:latest
+    restart: always
+    ports:
+      - "3500:3500"
+    volumes:
+      - ./src:/app/src  # Mount your source code directory
+      - ./build:/app/build  # Mount your build output directory
+    working_dir: /app
+    command: sh -c "npm run build && npm run start"

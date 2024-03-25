@@ -1,0 +1,11 @@
+# Dependencies
+/node_modules
+
+# Build files
+/build
+
+# OS or Editor specific files
+.DS_Store
+.env
+.idea
+.vscode
